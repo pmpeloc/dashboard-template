@@ -27,7 +27,7 @@ export const Sidebar = () => {
             className='w-20 h-20 object-cover rounded-full ring-2 ring-gray-300'
           />
           <h1 className='text-2xl text-white font-bold'>John Smith</h1>
-          <p className='bg-primary-100 py-1 px-3 rounded-full text-white'>
+          <p className='bg-primary-100 py-2 px-4 rounded-full text-white'>
             Pro Level
           </p>
         </div>

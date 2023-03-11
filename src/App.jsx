@@ -90,9 +90,9 @@ function App() {
         <section className='grid grid-cols-1 md:grid-cols-2 mt-10 gap-8'>
           <div>
             <h1 className='text-2xl font-bold mb-8'>Recent invoices</h1>
-            <div className='bg-white p-8 rounded-xl shadow-2xl mb-8'>
+            <div className='bg-white p-8 rounded-xl shadow-2xl mb-8 flex flex-col gap-8'>
               {/* Card 1 */}
-              <div className='grid grid-cols-4 items-center gap-4 mb-4'>
+              <div className='grid grid-cols-1 xl:grid-cols-4 items-center gap-4 mb-4'>
                 <div className='col-span-2 flex items-center gap-4'>
                   <img
                     src='https://img.freepik.com/foto-gratis/joven-confiado_1098-20868.jpg'
@@ -112,7 +112,7 @@ function App() {
                 <span className='font-bold'>&euro; 1.200,87</span>
               </div>
               {/* Card 2 */}
-              <div className='grid grid-cols-4 items-center gap-4 mb-4'>
+              <div className='grid grid-cols-1 xl:grid-cols-4 items-center gap-4 mb-4'>
                 <div className='col-span-2 flex items-center gap-4'>
                   <img
                     src='https://img.freepik.com/fotos-premium/feliz-alegre-joven-empresario-morena-brazos-cruzados-mirando-al-frente-sonrisa-alegre-encantadora_132358-1597.jpg'
@@ -132,7 +132,7 @@ function App() {
                 <span className='font-bold'>&euro; 12.989,87</span>
               </div>
             </div>
-            <div className='bg-primary-900 text-gray-300 p-8 rounded-xl shadow-2xl flex items-center justify-between'>
+            <div className='bg-primary-900 text-gray-300 p-8 rounded-xl shadow-2xl flex items-center justify-between flex-wrap xl:flex-nowrap gap-8'>
               <div className='flex gap-4 items-center'>
                 <RiHashtag className='text-4xl -rotate-12' />
                 <div>
@@ -140,10 +140,54 @@ function App() {
                   <h5>Join Slack channel</h5>
                 </div>
               </div>
-              <div>
-                <button className='bg-primary-100 py-2 px-6 rounded-xl text-white'>
+              <div className='w-full xl:w-auto'>
+                <button className='bg-primary-100 py-2 px-6 rounded-xl text-white w-full'>
                   Join now
                 </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 className='text-2xl font-bold mb-8'>Recommended project</h1>
+            <div className='bg-white p-8 rounded-xl shadow-2xl mb-8 flex flex-col gap-8'>
+              <div className='flex flex-col xl:flex-row xl:items-center justify-between gap-4'>
+                <div className='flex items-center gap-4'>
+                  <img
+                    src='https://img.freepik.com/foto-gratis/hombre-asiatico-feliz-tocando-barbilla-mirando-camara_1262-18237.jpg'
+                    alt='User'
+                    className='w-14 h-14 object-cover rounded-full'
+                  />
+                  <div>
+                    <h3 className='font-bold'>Thomas Martin</h3>
+                    <p className='text-gray-500'>Updated 10m ago</p>
+                  </div>
+                </div>
+                <div>
+                  <span className='bg-primary-100 py-2 px-4 rounded-full text-white'>
+                    Design
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h5 className='text-lg font-bold'>
+                  Need a designer to form branding essentials for my business.
+                </h5>
+                <p className='text-gray-500'>
+                  Looking for a talented brand designer to create all the
+                  branding materials my new startup
+                </p>
+              </div>
+              <div className='bg-primary-100/10 flex flex-col lg:flex-row items-center justify-between gap-4 py-8 px-4 rounded-lg'>
+                <div>
+                  <sup className='text-sm text-gray-500 mr-1'>&euro;</sup>
+                  <span className='text-2xl font-bold mr-2'>8.700</span>
+                  <span className='text-sm text-gray-500'>/ month</span>
+                </div>
+                <div>
+                  <span className='border border-primary-100 text-primary-100 py-2 px-4 rounded-full'>
+                    Full time
+                  </span>
+                </div>
               </div>
             </div>
           </div>
