@@ -16,7 +16,7 @@ export const Sidebar = () => {
   return (
     <>
       <div
-        className={`bg-primary-900 h-full fixed lg:static w-[80%] md:w-[40%] lg:w-full transition-all duration-300 ${
+        className={`bg-primary-900 h-full fixed lg:static w-[80%] md:w-[40%] lg:w-full transition-all duration-300 z-50 ${
           showMenu ? 'left-0' : '-left-full'
         }`}>
         {/* Profile */}
@@ -63,7 +63,7 @@ export const Sidebar = () => {
       </div>
       {/* Button movile */}
       <button
-        className='lg:hidden fixed right-4 bottom-4 text-2xl bg-primary-900 p-2.5 rounded-full text-white'
+        className='lg:hidden fixed right-4 bottom-4 text-2xl bg-primary-900 p-2.5 rounded-full text-white z-50'
         onClick={() => setShowMenu(!showMenu)}>
         {showMenu ? <RiCloseFill /> : <RiMore2Fill />}
       </button>
