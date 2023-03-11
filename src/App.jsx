@@ -19,8 +19,8 @@ function App() {
             </span>
           </div>
           {/* Card 2 */}
-          <div className='p-8 bg-white rounded-xl flex flex-col justify-between gap-4 drop-shadow-2xl'>
-            <div className='flex items-center gap-4 bg-primary-100/10 rounded-xl p-2'>
+          <div className='p-4 bg-white rounded-xl flex flex-col justify-between gap-4 drop-shadow-2xl'>
+            <div className='flex items-center gap-4 bg-primary-100/10 rounded-xl p-4'>
               <span className='bg-primary-100 text-gray-300 text-2xl font-bold p-4 rounded-xl'>
                 98
               </span>
@@ -29,7 +29,7 @@ function App() {
                 <p className='text-gray-500'>In top 30%</p>
               </div>
             </div>
-            <div className='bg-primary-100/10 rounded-xl p-2'>
+            <div className='bg-primary-100/10 rounded-xl p-4'>
               <div className='flex items-center gap-4 mb-4'>
                 <span className='bg-primary-100 text-gray-300 text-2xl font-bold p-4 rounded-xl'>
                   32
@@ -39,13 +39,41 @@ function App() {
                   <p className='text-gray-500'>8 this month</p>
                 </div>
               </div>
-              <div className='flex items-center gap-2'>
-                <span className='bg-primary-100/20 py-1 px-2 rounded-full'>
+              <div className='flex items-center gap-2 text-gray-500 text-sm'>
+                <span className='bg-primary-100/20 py-1 px-4 rounded-full'>
                   Mobile app
                 </span>
-                <span className='bg-primary-100/20 py-1 px-2 rounded-full'>
+                <span className='bg-primary-100/20 py-1 px-4 rounded-full'>
                   Branding
                 </span>
+              </div>
+            </div>
+          </div>
+          {/* Card 3 */}
+          <div className='col-span-1 md:col-span-2 flex flex-col justify-between'>
+            <h1 className='text-2xl font-bold mb-8'>Your projects</h1>
+            <div className='bg-white p-8 rounded-xl shadow-2xl'>
+              <div className='flex items-center gap-4 mb-8'>
+                <img
+                  src='https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg'
+                  alt='User'
+                  className='w-14 h-14 object-cover rounded-full'
+                />
+                <div>
+                  <h3 className='font-bold'>Logo design for Bakery</h3>
+                  <p className='text-gray-500'>1 day remaining</p>
+                </div>
+              </div>
+              <div className='flex items-center gap-4'>
+                <img
+                  src='https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg'
+                  alt='User'
+                  className='w-14 h-14 object-cover rounded-full'
+                />
+                <div>
+                  <h3 className='font-bold'>Logo design for Bakery</h3>
+                  <p className='text-gray-500'>1 day remaining</p>
+                </div>
               </div>
             </div>
           </div>
